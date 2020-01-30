@@ -1,4 +1,4 @@
-# teste Desafio Bureau Consumidor app Laravel/react
+# Teste desafio Bureau consumidor app Laravel/React.JS
 
 ## Tecnologias adotadas
 - Para o **Backend**, utilizei o framework de ORM, **Laravel**, na versão mais atual(6.2). O framework em *PHP* é preparado para separação de **Frontend**, com suporte nativo para Vue.JS, possui estrutura *MVC* e para versionamento de *Banco de Dados* tem os **Migrations** que criam e atualizam o banco dedados pelo terminal, e os **Seeders** que populam o banco com valores "defaults". Também suporta varias conexões de bancos de dados diferentes no mesmo *controller* e *model*.
