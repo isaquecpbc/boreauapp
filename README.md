@@ -1,11 +1,11 @@
 # Teste desafio Bureau consumidor app Laravel/React.JS
 
 ## Tecnologias adotadas
-- Para o **Backend**, utilizei o framework de ORM, **Laravel**, na versão mais atual(6.2). O framework em *PHP* é preparado para separação de **Frontend**, com suporte nativo para Vue.JS, possui estrutura *MVC* e para versionamento de *Banco de Dados* tem os **Migrations** que criam e atualizam o banco dedados pelo terminal, e os **Seeders** que populam o banco com valores "defaults". Também suporta varias conexões de bancos de dados diferentes no mesmo *controller* e *model*.
+- Para o **Backend**, utilizei o framework de ORM, **Laravel**, na versão mais atual(6.2). O framework em *PHP* é preparado para separação de **Frontend**, com suporte nativo para Vue.JS, possui estrutura *MVC* e para versionamento de *Banco de Dados* tem os **Migrations** que criam e atualizam o banco de dados pelo terminal, e os **Seeders** que populam o banco com valores "defaults". Também suporta varias conexões de bancos de dados diferentes no mesmo *controller* e *model*.
 - Já no **Frontend** utilizei o React.JS pela sua praticidade e agilidade. No laravel defino o uso do React com o comando ``` $ php artisan preset react ```
-- Para a base de dados A, que precisa de mais segurança, entre as tecnologias de Banco de dados citadas, proponho o uso do Postpostgress, pois tem mais segurança, e tem fácil uso e curva de aprendizado.
-- Para a Base B, proponho o uso de MySql pela segurança e rapidez, que se mostra mais rapido em testes realizados. para melhor segurança pode ser implementado *stored procedures* que aumentam a segurança do banco de dados.
-- Para a Base C, proponho o MongoBD, um bd NoSQL que possui muita rapidez por oferecer alta disponibilidade, usando conjuntos replicados.
+- Para a base de dados *A*, que precisa de mais segurança, entre as tecnologias de Banco de dados citadas, proponho o uso do Postgress, pois tem mais segurança, e tem fácil uso e curva de aprendizado.
+- Para a Base *B*, proponho o uso de MySql pela segurança e rapidez, que se mostra mais rapido em testes realizados. para melhor segurança pode ser implementado *stored procedures* que aumentam a segurança do banco de dados.
+- Para a Base *C*, proponho o MongoBD, um bd NoSQL que possui muita rapidez por oferecer alta disponibilidade, usando conjuntos replicados.
 - Todas as tecnologias listadas acima podem ser executadas em apache local ou servidor cloud/hospedagem.
 
 ## Arquitetura utilizada
