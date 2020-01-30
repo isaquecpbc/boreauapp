@@ -12,11 +12,12 @@
 A arquitetura do App é MVC, sendo que os bancos de dados estão na 3º forma normalizada para a base A na qual implementei o consumo do app.
 
 ![mvc-processos](https://user-images.githubusercontent.com/7758489/73460905-0a776000-4358-11ea-8bb7-286f8e334647.png)
-*Imagem modificada, retirada da internet:* https://www.javatpoint.com/laravel-interview-questions *acesso: 29/01/2020*
+> *Imagem modificada, retirada da internet:* https://www.javatpoint.com/laravel-interview-questions *acesso: 29/01/2020*
 
 A modelo de Banco de dados formalizado:
+
 ![Base A](https://user-images.githubusercontent.com/7758489/73460809-d9972b00-4357-11ea-94c9-bd6a3bdc1cf8.png)
-*Imagem criada no MySql Workbench CE*
+> *Imagem criada no MySql Workbench CE*
 
 ## Dados armazenados
 
@@ -46,12 +47,14 @@ Dados relacionados a última compra com cartao de crédito vinculado ao CPF:
 ## Para executar o laravel em um apache:
 1. criar um banco de dados com o configurar no arquivo .env na raiz:
 
+```
 DB_CONNECTION=pgsql
 DB_HOST=127.0.0.1
 DB_PORT=5432
 DB_DATABASE=boreauapp
 DB_USERNAME=postgres
 DB_PASSWORD=YOURPASS
+```
 
 2. abrir o cmd na raiz do projeto
 
@@ -71,4 +74,3 @@ DB_PASSWORD=YOURPASS
 ``` $ npm run dev ```
 
 O aplicativo(local) irá executar em http://127.0.0.1:8000
-
