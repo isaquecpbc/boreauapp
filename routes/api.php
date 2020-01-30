@@ -13,9 +13,7 @@ use Illuminate\Http\Request;
 |
 */
 
-Route::prefix('contributors')->group(function () {
-    Route::get('/', 'ContributorsController@index');
-    Route::post('/', 'ContributorsController@store');
-    Route::get('/{id}', 'ContributorsController@show');
-    Route::get('/calculate/{minsalary}', 'ContributorsController@calculate');
+Route::prefix('clientes')->group(function () {
+    Route::get('/', 'ClientesController@index');
+    Route::get('/{id}', 'ClientesController@show');
 });
