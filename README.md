@@ -45,7 +45,7 @@ Dados relacionados a última compra com cartao de crédito vinculado ao CPF:
 - Divida em atrazo
 
 ## Para executar o laravel em um apache:
-1. criar um banco de dados com o configurar no arquivo .env na raiz:
+1. Criar um banco de dados com o configurar no arquivo .env na raiz:
 
 ```
 DB_CONNECTION=pgsql
@@ -56,7 +56,7 @@ DB_USERNAME=postgres
 DB_PASSWORD=YOURPASS
 ```
 
-2. abrir o terminal na raiz do projeto
+2. Abrir o terminal na raiz do projeto
 
 3. Para executar criar as tabelas no banco de dados usamos o migration:
 ``` $ php artisan migrate ``` 
@@ -67,10 +67,10 @@ DB_PASSWORD=YOURPASS
 5.  Para popular o banco de dados executamos o seeder:
 ``` $ php artisan db:seed ```
 
-6. iniciar o laravel com:
+6. Iniciar o laravel com:
 ``` $ php artisan serve ```
 
-7. inicializar o react com outro terminal na raiz
+7. Inicializar o react com outro terminal na raiz
 ``` $ npm run dev ```
 
 O aplicativo(local) irá executar em http://127.0.0.1:8000
