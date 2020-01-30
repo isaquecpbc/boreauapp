@@ -55389,32 +55389,60 @@ function (_Component) {
     value: function render() {
       var clientes = this.state.clientes;
       clientes.sort(function (a, b) {
-        return a.name > b.name ? 1 : b.name > a.name ? -1 : 0;
+        return a.nome > b.nome ? 1 : b.nome > a.nome ? -1 : 0;
       });
       console.log(clientes);
       return react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("div", {
-        className: "container py-4"
+        className: "container py-2 mt-3"
       }, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("div", {
         className: "row justify-content-center"
       }, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("div", {
-        className: "col-md-8"
+        className: "col-md-10"
       }, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("div", {
         className: "card"
       }, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("div", {
         className: "card-header"
       }, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("h4", {
         className: "list-inline-item"
-      }, "All clientes")), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("div", {
+      }, "Todas as dividas dos clientes:")), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("div", {
         className: "card-body"
-      }, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("ul", {
-        className: "list-group list-group-flush"
-      }, clientes.map(function (cliente) {
-        return react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_3__["Link"], {
-          className: "list-group-item list-group-item-action d-flex justify-content-between align-items-center",
+      }, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("table", {
+        "class": "table table-striped"
+      }, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("thead", null, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("tr", null, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("th", {
+        scope: "col"
+      }, "#"), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("th", {
+        scope: "col"
+      }, "Nome"), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("th", {
+        scope: "col"
+      }, "CPF"), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("th", {
+        scope: "col"
+      }, "Divida"), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("th", {
+        scope: "col"
+      }, "Empresa"), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("th", {
+        scope: "col"
+      }, "Endere\xE7o"), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("th", {
+        scope: "col"
+      }, "Cidade"))), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("tbody", null, clientes.map(function (cliente, index) {
+        return react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("tr", null, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("th", {
+          scope: "row",
+          className: "justify-content-between align-items-center"
+        }, index), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("td", {
+          className: "justify-content-between align-items-center"
+        }, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_3__["Link"], {
           to: "/cliente/".concat(cliente.id),
-          key: cliente.id
-        }, cliente.nome);
-      })))))));
+          key: index
+        }, cliente.nome)), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("td", {
+          className: "justify-content-between align-items-center"
+        }, cliente.cpf), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("td", {
+          className: "justify-content-between align-items-center"
+        }, "R$\xA0", cliente.divida), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("td", {
+          className: "justify-content-between align-items-center"
+        }, cliente.empresa), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("td", {
+          className: "justify-content-between align-items-center"
+        }, cliente.rua, ",\xA0", cliente.logradouro), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("td", {
+          className: "justify-content-between align-items-center"
+        }, cliente.cidade, "\xA0/", cliente.uf));
+      }))))))));
     }
   }]);
 
@@ -55536,7 +55564,7 @@ function (_Component) {
         className: "card-body"
       }, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("p", null, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("strong", null, "CPF:\xA0"), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("span", {
         className: "cpf"
-      }, cliente.cpf)), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("hr", null), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("p", null, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("strong", null, "Nome:\xA0"), cliente.nome))))));
+      }, cliente.cpf)), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("hr", null), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("p", null, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("strong", null, "D\xEDvida:\xA0"), "R$\xA0", cliente.divida), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("hr", null), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("p", null, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("strong", null, "Empresa:\xA0"), cliente.empresa), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("hr", null), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("p", null, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("strong", null, "Endere\xE7o:\xA0"), cliente.rua, ",\xA0", cliente.logradouro), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("hr", null), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("p", null, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("strong", null, "Localidade:\xA0"), cliente.cidade, "\xA0/", cliente.uf))))));
     }
   }]);
 
