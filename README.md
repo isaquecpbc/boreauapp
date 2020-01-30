@@ -56,7 +56,7 @@ DB_USERNAME=postgres
 DB_PASSWORD=YOURPASS
 ```
 
-2. abrir o cmd na raiz do projeto
+2. abrir o terminal na raiz do projeto
 
 3. Para executar criar as tabelas no banco de dados usamos o migration:
 ``` $ php artisan migrate ``` 
@@ -70,7 +70,7 @@ DB_PASSWORD=YOURPASS
 6. iniciar o laravel com:
 ``` $ php artisan serve ```
 
-7. inicializar o react com outro cmd na raiz
+7. inicializar o react com outro terminal na raiz
 ``` $ npm run dev ```
 
 O aplicativo(local) irá executar em http://127.0.0.1:8000
